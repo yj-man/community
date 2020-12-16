@@ -58,10 +58,6 @@
 
                         <a href="https://github.com/login/oauth/authorize?client_id=8527164435d298c2e7fa&redirect_uri=http://localhost:8887/callback&scope=user&state=1">登录试试</a>
 
-
-
-
-<!--                        <a th:href="@{https://gitee.com/oauth/authorize(client_id='010cc4fdff23fd7f435f93074656e0b81e71b39721b12d8e3a28bd42342a76e9',redirect_uri='http://localhost:8080/?response_type=code',response_type=code)}">登录</a>-->
                         <a th:href="@{https://github.com/login/oauth/authorize(client_id='Iv1.a799fae7cc3a9e3c',redirect_uri=${#httpServletRequest.getServletContext().getAttribute('redirectUri')},scope='user',state=1)}">登录</a>
                     </li>
 
