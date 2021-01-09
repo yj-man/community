@@ -37,7 +37,7 @@
                 </li>
             </ul>
 
-            <div class="media" th:each="question : ${pagination.questions}">
+            <div class="media" th:each="question : ${pagination.data}">
                 <div class="media-left">
                     <a href="#">
                         <img class="media-object img-rounded"
@@ -96,7 +96,7 @@
                 <a th:each="tag : ${tags}" th:href="@{/(page=1,search=${search},tag=${tag},sort=${sort})}"
                    th:text="${tag}" class="community-tag"></a>
             </div>
-<!--            <div th:insert="~{side :: side}"></div>-->
+            <!--            <div th:insert="~{side :: side}"></div>-->
         </div>
     </div>
 </div>
